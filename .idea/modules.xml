@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DSA/DSA.iml" filepath="$PROJECT_DIR$/DSA/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-SystemDesigns.iml" filepath="$PROJECT_DIR$/DSA-SystemDesigns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/System-Design/RateLimiter/RateLimiter.iml" filepath="$PROJECT_DIR$/System-Design/RateLimiter/RateLimiter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/System-Design/System-Design.iml" filepath="$PROJECT_DIR$/System-Design/System-Design.iml" />
+    </modules>
+  </component>
+</project>
