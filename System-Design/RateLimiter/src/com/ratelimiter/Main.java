@@ -13,6 +13,23 @@ public class Main {
         RateLimiter rateLimiter=new RateLimiter(fixedRateLimiterStrategy);
 
 
+//        for(int i=0;i<10;i++){
+//            if(rateLimiter.allowRequest("user1"))
+//                System.out.println("Request "+(i+1)+" allowed for user1");
+//            else
+//                System.out.println("Request "+(i+1)+" not allowed for user1");
+//
+//            if(rateLimiter.allowRequest("user2"))
+//                System.out.println("Request "+(i+1)+" allowed for user2");
+//            else
+//                System.out.println("Request "+(i+1)+" not allowed for user2");
+//        }
+
+
+        RateLimiterStrategy slidingWindowRateLimiter=
+                new SlidingWindowRateLimiter(RateLimiterConstant.MAX_REQUESTS,RateLimiterConstant.WINDOW_SIZE);
+        slidingWindowRateLimiter.allowRequest("user1");
+
         for(int i=0;i<10;i++){
             if(rateLimiter.allowRequest("user1"))
                 System.out.println("Request "+(i+1)+" allowed for user1");
